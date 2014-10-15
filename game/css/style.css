@@ -1,0 +1,165 @@
+body {
+    background : #58b0ed;
+    color: #FFF;
+    font-size: 24px;
+    font-family: "Open Sans", 'sans-serif';
+    text-align: center;
+}
+
+#homeScreen, #gameScreen, #endScreen {
+    transition-duration: 600ms;
+    opacity : 0;
+}
+#homeScreen {
+    opacity: 1;
+}
+
+#startButton, #restartButton, #homeButton {
+    background: transparent;
+    font-size: 20px;
+    padding: 10px 20px;
+    color: #FFF;
+    border: 2px solid #FFF;
+    border-radius: 10px;
+}
+
+.clear { 
+    clear: both;
+    width: 100%;
+    height: 1px;
+}
+
+.clear.clear-100 {
+    height: 100px;
+}
+
+#scoreContainer, #timerContainer {
+    font-size: 30px;
+    float: left;
+}
+
+#timerContainer {
+    float: right;
+}
+
+
+#mainWordContainer .alphabet{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    color: #333;
+    background: #FFF;
+    text-align: center;
+    line-height: 100px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    font-size: 30px;
+}
+
+
+#mainWordContainer .alphabet.selected {
+    background: #FDD264;
+    color: #A55A0A;
+}
+
+#selectedWordWrapper {
+    text-align:left;
+    padding: 0 5%;
+}
+#selectedWordWrapper span {
+    width:20%;
+    vertical-align: top;
+    color: #FFF;
+
+}
+#selectedWordContainer {
+    display: inline-block;
+    width:60%;
+    text-align: left;
+    vertical-align: top;
+    margin-left: 5%;
+}
+#selectedWordContainer .alphabet {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: #FDD264;
+    color: #A55A0A;
+    text-align: center;
+    line-height: 50px;
+    text-transform: uppercase;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+#wordSubmit {
+    vertical-align: top;
+    background: #FFF;
+    border-radius: 5px;
+    height: 50px;
+    width: 50px;
+    border: none;
+    font-size: 30px;
+    line-height: 30px;
+    float: right;
+}
+
+#errorMessageContainer {
+    height: 100px;
+    line-height: 100px;
+    padding: 10px;
+    text-align: center;
+    font-size: 16px;
+}
+
+#submittedWordsContainer {
+
+}
+.submitted-word {
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 10px;
+}
+.submitted-word.new {
+    opacity: 0;
+}
+.submitted-word.fadeIn {
+    -webkit-animation: fade 1s;
+    animation: fade 1s;
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+@keyframes fade {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+@media (max-width: 700px) {
+    #mainWordContainer .alphabet {
+        width: 80px;
+        height: 80px;
+        line-height: 80px;
+        margin-top: 5px;
+    }
+    #selectedWordWrapper span {
+        display: block;
+        margin-top: 10px;
+    }
+    .clear.clear-100 {
+        height: 30px;
+    }
+    #errorMessageContainer {
+        height: 50px;
+        line-height: 50px;
+    }
+    #wordSubmit {
+        display: block;
+    }
+    #submittedWordsContainer { 
+        display: none;
+    }
+}

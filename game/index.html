@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,width=device-width" />
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+    <body>
+        <div id="homeScreen">
+            <h2>Foo Foo Word Game</h2>
+            <p>Make as many words as you can in a minute</p>
+            <button id="startButton">Start</button>
+        </div>
+
+        <div id="gameScreen">
+            <div id="scoreContainer"></div>
+            <div id="timerContainer"></div>
+            <div class="clear clear-100"></div>
+            <div id="mainWordContainer"></div>
+            <div class="clear clear-100"></div>
+
+            <div id="errorMessageContainer"></div>
+            <div id="selectedWordWrapper">
+                <span>Word: </span>
+                <div id="selectedWordContainer"></div>
+                <button id="wordSubmit">&rsaquo;</button>
+                <div class="clear"></div>
+            </div>
+            <div class="clear clear-100"></div>
+            <div id="submittedWordsContainer"></div>
+        </div>
+
+        <div id="endScreen">
+            <h3>Your Score</h3>
+            <p id="finalScoreContainer"></p>
+            <div class="clear clear-100"></div>
+            <button id="restartButton">Play Again</button>
+            <button id="homeButton">Home</button>
+        </div>
+
+
+        <script data-main="js/main" src="js/libs/require.js"></script>
+    </body>
+</html>
